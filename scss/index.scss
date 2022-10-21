@@ -1,3 +1,14 @@
+$colors: (
+    primary-color: #FC3A79,
+    secondary-color: #FE572E,
+    tertiary-color: #261F22,
+    tertiary-color_1: #261f223b,
+    tertiary-color_2: #261f220e,
+    
+);
+
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -8,17 +19,21 @@
     position: sticky;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: #261f2216;
-    height: 96px;
+    border-bottom-style: solid;
+    border-color: #261f2211;
+    height: 72px;
     font-family: proxima nova;
+    font-size: 12px;
+    font-weight: bold;
 
 
-    .header_item{
-        background-color: black;
+    a{
+        color: map-get($colors , tertiary-color );
+        text-decoration: none;
     }
     
     .header_left{
-        background-color: red;
+        
         grid-column: 1/5;
         display: flex;
         flex-direction: row;
@@ -26,7 +41,7 @@
         align-items: center;
 
         .left_item-1{
-            background-color: bisque;
+            
             margin-left: 64px;
             
         }
@@ -42,7 +57,7 @@
     }
 
     .header_mid{
-        background-color: aqua;
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -51,6 +66,10 @@
 
         .mid_item-1{
             margin-left: 64px;
+            
+            a{
+                color: map-get($colors, primary-color );
+            }
         }
 
         .mid_item-2{
@@ -60,15 +79,83 @@
     }
     
     .header_right{
-        background-color: aquamarine;
+        
+        
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         grid-column: 11/-1;
 
+        img{
+            height: 22px;
+            width: 22px;
+        }
 
+        .border_left{
+            border-left-style: solid;
+            border-color: map-get($colors, tertiary-color_1 );
+            height: 22px;
+            
+        }
+       
+    }
+}
+
+.hero{
+    margin-top: 172px;
+    
+    
+    
+
+    .hero_intro{
+        font-family: brandon grotesque;
+        font-size: 40px;
+        text-align: center;
+        background: -webkit-linear-gradient(#FE572E, #FC3A79);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero_description{
+        font-family: brandon grotesque;
+        font-size: 78px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero_main_description{
+        font-family: proxima nova;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 22px;
+    }
+   .hero_work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .content_work{
+        margin-left:10px ;
+        background-image: linear-gradient(to right , #FE572E,  #FC3A79);
+        height: 54px;
+        width: 200px;
+        border-radius: 50px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: proxima nova;
+        font-weight: bold;
+        color: white;
+        img{
+            margin-left:10px ;
+            height: 22px;
+          
+
+        }
         
+    }
     }
 }
 

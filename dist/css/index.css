@@ -8,15 +8,18 @@
   position: sticky;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: rgba(38, 31, 34, 0.0862745098);
-  height: 96px;
+  border-bottom-style: solid;
+  border-color: rgba(38, 31, 34, 0.0666666667);
+  height: 72px;
   font-family: proxima nova;
+  font-size: 12px;
+  font-weight: bold;
 }
-.header .header_item {
-  background-color: black;
+.header a {
+  color: #261F22;
+  text-decoration: none;
 }
 .header .header_left {
-  background-color: red;
   grid-column: 1/5;
   display: flex;
   flex-direction: row;
@@ -24,7 +27,6 @@
   align-items: center;
 }
 .header .header_left .left_item-1 {
-  background-color: bisque;
   margin-left: 64px;
 }
 .header .header_left .left_item-2 {
@@ -34,7 +36,6 @@
   margin-left: 64px;
 }
 .header .header_mid {
-  background-color: aqua;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,14 +45,73 @@
 .header .header_mid .mid_item-1 {
   margin-left: 64px;
 }
+.header .header_mid .mid_item-1 a {
+  color: #FC3A79;
+}
 .header .header_mid .mid_item-2 {
   margin-left: 64px;
 }
 .header .header_right {
-  background-color: aquamarine;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   grid-column: 11/-1;
+}
+.header .header_right img {
+  height: 22px;
+  width: 22px;
+}
+.header .header_right .border_left {
+  border-left-style: solid;
+  border-color: rgba(38, 31, 34, 0.231372549);
+  height: 22px;
+}
+
+.hero {
+  margin-top: 172px;
+}
+.hero .hero_intro {
+  font-family: brandon grotesque;
+  font-size: 40px;
+  text-align: center;
+  background: -webkit-linear-gradient(#FE572E, #FC3A79);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .hero_description {
+  font-family: brandon grotesque;
+  font-size: 78px;
+  font-weight: bold;
+  text-align: center;
+}
+.hero .hero_main_description {
+  font-family: proxima nova;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 22px;
+}
+.hero .hero_work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero_work .content_work {
+  margin-left: 10px;
+  background-image: linear-gradient(to right, #FE572E, #FC3A79);
+  height: 54px;
+  width: 200px;
+  border-radius: 50px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: proxima nova;
+  font-weight: bold;
+  color: white;
+}
+.hero .hero_work .content_work img {
+  margin-left: 10px;
+  height: 22px;
 }/*# sourceMappingURL=index.css.map */
