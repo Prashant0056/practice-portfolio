@@ -1,12 +1,21 @@
 $colors: (
-    primary-color: #FC3A79,
+    primary-color: #FC3A78,
     secondary-color: #FE572E,
     tertiary-color: #261F22,
     tertiary-color_1: #261f223b,
     tertiary-color_2: #261f220e,
-    
+    tertiary-color_3: #261f22af,
+    work-1: #7F63F4,
+    work-2:#43CB83,
+
 );
 
+
+
+$fonts:(
+    heading-font: brandon grotesque,
+    small-text: proxima nova,
+);
 
 
 *{
@@ -17,14 +26,17 @@ $colors: (
 
 .header{
     position: sticky;
+    top: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     border-bottom-style: solid;
     border-color: #261f2211;
     height: 72px;
-    font-family: proxima nova;
+    font-family: map-get($fonts , small-text );
     font-size: 12px;
     font-weight: bold;
+    background-color: white;
+    
 
 
     a{
@@ -98,6 +110,9 @@ $colors: (
             height: 22px;
             
         }
+
+
+        
        
     }
 }
@@ -109,7 +124,7 @@ $colors: (
     
 
     .hero_intro{
-        font-family: brandon grotesque;
+        font-family: map-get($fonts , heading-font );
         font-size: 40px;
         text-align: center;
         background: -webkit-linear-gradient(#FE572E, #FC3A79);
@@ -119,14 +134,14 @@ $colors: (
     }
 
     .hero_description{
-        font-family: brandon grotesque;
+        font-family: map-get($fonts , heading-font );
         font-size: 78px;
         font-weight: bold;
         text-align: center;
     }
 
     .hero_main_description{
-        font-family: proxima nova;
+        font-family: map-get($fonts , small-text );
         text-align: center;
         font-size: 16px;
         margin-top: 22px;
@@ -135,17 +150,19 @@ $colors: (
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        height: 200px;
     .content_work{
         margin-left:10px ;
         background-image: linear-gradient(to right , #FE572E,  #FC3A79);
         height: 54px;
         width: 200px;
         border-radius: 50px;
-        margin-top: 40px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: proxima nova;
+        font-family: map-get($fonts , small-text );
         font-weight: bold;
         color: white;
         img{
@@ -159,3 +176,89 @@ $colors: (
     }
 }
 
+
+.client_list{
+    height: 200px;
+    background-color: map-get($colors , tertiary-color_2 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .client_list_description{
+        font-family: map-get($fonts , small-text );
+        font-size: 12px;
+        padding-bottom: 10px;
+        color: map-get($colors , tertiary-color_3 );
+    }
+
+
+    .client_list_logo{
+        width: 450px;
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-evenly;
+        
+        img{
+            height: 48px;
+        }
+    }
+}
+
+
+.my_work{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px ;
+    
+    .my_work_heading{
+        font-family: map-get($fonts , heading-font );
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .my_work_description{
+        color: map-get($colors , tertiary-color_3 );
+        margin-top: 30px;
+        font-family: map-get($fonts , small-text );
+        font-weight: lighter;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+
+
+.work-1{
+    height: 650px;
+    background-color:map-get($colors , work-1 );
+    display: flex;
+    justify-content: center;
+
+
+    .work-1_element{
+        
+        height: 650px;
+        width: 85%;
+        top: 200px;
+        background-color: map-get($colors, tertiary-color_3 );
+        margin-top: 100px;
+    }
+}
+
+
+.work-2{
+    margin-top: 200px;
+    height: 450px;
+    background-color: map-get($colors , work-2);
+
+}
+
+.footer{
+    height: 80px;
+    border-top-style: solid;
+    border-color: map-get($colors , tertiary-color_1 );
+    border-width: 2px;
+}

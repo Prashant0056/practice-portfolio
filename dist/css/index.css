@@ -6,6 +6,7 @@
 
 .header {
   position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   border-bottom-style: solid;
@@ -14,6 +15,7 @@
   font-family: proxima nova;
   font-size: 12px;
   font-weight: bold;
+  background-color: white;
 }
 .header a {
   color: #261F22;
@@ -46,7 +48,7 @@
   margin-left: 64px;
 }
 .header .header_mid .mid_item-1 a {
-  color: #FC3A79;
+  color: #FC3A78;
 }
 .header .header_mid .mid_item-2 {
   margin-left: 64px;
@@ -96,6 +98,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
 }
 .hero .hero_work .content_work {
   margin-left: 10px;
@@ -103,7 +106,6 @@
   height: 54px;
   width: 200px;
   border-radius: 50px;
-  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,4 +116,77 @@
 .hero .hero_work .content_work img {
   margin-left: 10px;
   height: 22px;
+}
+
+.client_list {
+  height: 200px;
+  background-color: rgba(38, 31, 34, 0.0549019608);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.client_list .client_list_description {
+  font-family: proxima nova;
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: rgba(38, 31, 34, 0.6862745098);
+}
+.client_list .client_list_logo {
+  width: 450px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.client_list .client_list_logo img {
+  height: 48px;
+}
+
+.my_work {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.my_work .my_work_heading {
+  font-family: brandon grotesque;
+  font-weight: bold;
+  font-size: 45px;
+}
+.my_work .my_work_description {
+  color: rgba(38, 31, 34, 0.6862745098);
+  margin-top: 30px;
+  font-family: proxima nova;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.work-1 {
+  height: 650px;
+  background-color: #7F63F4;
+  display: flex;
+  justify-content: center;
+}
+.work-1 .work-1_element {
+  height: 650px;
+  width: 85%;
+  top: 200px;
+  background-color: rgba(38, 31, 34, 0.6862745098);
+  margin-top: 100px;
+}
+
+.work-2 {
+  margin-top: 200px;
+  height: 450px;
+  background-color: #43CB83;
+}
+
+.footer {
+  height: 80px;
+  border-top-style: solid;
+  border-color: rgba(38, 31, 34, 0.231372549);
+  border-width: 2px;
 }/*# sourceMappingURL=index.css.map */
