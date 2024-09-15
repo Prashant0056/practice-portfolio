@@ -1,3 +1,13 @@
+@font-face {
+    font-family: proxima nova;
+    src: url(/fonts/Proxima\ Nova\ Font.otf);
+
+    font-family: brandon grotesque;
+    src: url(/fonts/brandon-grotesque-black-58a8a3e824392.otf);
+}
+
+
+
 $colors: (
     primary-color: #FC3A78,
     secondary-color: #FE572E,
@@ -52,6 +62,17 @@ $fonts:(
         justify-content: center;
         align-items: center;
 
+
+        .header_item_left {
+
+            a{
+                transition: 0.3s;
+            }
+             a:hover{
+            color: map-get($colors, secondary-color );
+        }
+    }
+
         .left_item-1{
             
             margin-left: 64px;
@@ -98,6 +119,38 @@ $fonts:(
         justify-content: space-evenly;
         align-items: center;
         grid-column: 11/-1;
+        
+        
+        
+       .right_item-1{
+       
+        .twitter_logo{
+            transition: 00.3s;
+        }
+        .twitter_logo:hover{
+
+        
+        fill: #00ACEE;
+        
+        }
+       }
+
+       .right_item-2{
+        .github_logo:hover{
+            fill: #3e3b3b;
+           
+        }
+       }
+
+       .right_item-3{
+        .facebook_logo{
+            transition: 0.3s;
+        }
+        .facebook_logo:hover{
+            
+            fill: #3B5998;
+        }
+       }
 
         img{
             height: 22px;
@@ -117,8 +170,15 @@ $fonts:(
     }
 }
 
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+
 .hero{
-    margin-top: 172px;
+    margin-top: 137px;
     
     
     
@@ -145,6 +205,7 @@ $fonts:(
         text-align: center;
         font-size: 16px;
         margin-top: 22px;
+        
     }
    .hero_work{
         display: flex;
@@ -261,4 +322,9 @@ $fonts:(
     border-top-style: solid;
     border-color: map-get($colors , tertiary-color_1 );
     border-width: 2px;
+}
+
+
+@media  screen and (max-width: 600px) {
+    
 }

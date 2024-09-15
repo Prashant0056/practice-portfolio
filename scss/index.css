@@ -1,3 +1,9 @@
+@font-face {
+  font-family: proxima nova;
+  src: url(/fonts/Proxima\ Nova\ Font.otf);
+  font-family: brandon grotesque;
+  src: url(/fonts/brandon-grotesque-black-58a8a3e824392.otf);
+}
 * {
   margin: 0%;
   padding: 0%;
